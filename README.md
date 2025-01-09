@@ -83,7 +83,7 @@ The key steps in this project include:
 
 - **Florine Nguyen**  
   - [LinkedIn](https://www.linkedin.com/in/florine-nguyen/)  
-  - [GitHub](https://github.com/florine-nguyen)
+  - [GitHub](https://github.com/FlorineNguyen)
 
 
 For any questions or suggestions, feel free to open an issue or contact us on LinkedIn/GitHub.
