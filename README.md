@@ -58,20 +58,6 @@ The key steps in this project include:
   - \(r\): Risk-free rate.
   - \(T\): Maturity (in years).
 
-### **4. Results**
-- Example parameters:
-  - Initial price (SG): 26.6
-  - Initial price (BNP): 57.4
-  - Strike: 30
-  - Volatility: 0.2
-  - Correlation: -0.2
-  - Risk-free rate: 3%
-  - Time steps: 250
-  - Simulations: 100
-- Calculated prices:
-  - **Best-Of Call Option**: 31.6
-  - **Worst-Of Call Option**: 2.05
-
 ---
 
 ## **Requirements**
