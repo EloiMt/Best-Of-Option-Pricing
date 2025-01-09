@@ -82,7 +82,7 @@ The key steps in this project include:
   - [GitHub](https://github.com/EloiMt)
 
 - **Florine Nguyen**  
-  - [LinkedIn](https://www.linkedin.com/in/florine-nguyen/)  
+  - [LinkedIn](https://www.linkedin.com/in/florine-nguyen-325778254/)  
   - [GitHub](https://github.com/FlorineNguyen)
 
 
