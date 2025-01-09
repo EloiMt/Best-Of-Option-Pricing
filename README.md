@@ -32,12 +32,7 @@ The key steps in this project include:
 ### **2. Price Simulation**
 - **Monte Carlo Simulations**:
   - Simulates price paths for Société Générale and BNP assets using the GBM formula:
-  $$ S_t = S_{t-1} \times \exp\left((\mu - 0.5 \sigma^2)\Delta t + \sigma Z\sqrt{\Delta t}\right) $$
-    - \(S_t\): Price at time \(t\).
-    - \(\mu\): Expected return.
-    - \(\sigma\): Volatility.
-    - \(Z\): Standard normal random variable.
-    - \(\Delta t\): Time increment (\(1/250\)).
+   ![Capture d'écran 2025-01-09 102100](‪C:\Users\eloim\Downloads\Capture d'écran 2025-01-09 102100.png)
 
 ### **3. Option Pricing**
 - **Best-Of Option Payoff**:  
