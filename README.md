@@ -22,32 +22,25 @@ The key steps in this project include:
    - Code for retrieving spot prices, fetching historical data, and running simulations.
 
 ---
+## Key Features
 
-## **Key Features**
+1. **Data Retrieval**
+   - Spot prices for Société Générale and BNP are fetched from **Boursorama** using VBA scripts.
+   - Historical price data is downloaded from the **AlphaVantage API**. This data is essential for estimating volatility and correlation between the two assets.
 
-### **1. Data Retrieval**
-- Spot prices are fetched from **Boursorama** using VBA.
-- Historical data is downloaded using the **AlphaVantage API** for volatility and correlation estimation.
+2. **Price Simulation**
+   - Monte Carlo simulations are used to generate multiple possible price paths for Société Générale and BNP assets over a given time horizon.
+   - The simulation is based on a geometric model that incorporates expected returns, volatility, and random market fluctuations.
 
-### **2. Price Simulation**
-- **Monte Carlo Simulations**:
-  - Simulates price paths for Société Générale and BNP assets using the GBM formula:
-   ![Capture d'écran 2025-01-09 102100](‪C:\Users\eloim\Downloads\Capture d'écran 2025-01-09 102100.png)
+3. **Option Pricing**
+   - **Best-Of Option Payoff**: This option pays out based on the better-performing asset between Société Générale and BNP, minus a predefined strike price.
+   - **Worst-Of Option Payoff**: This option pays out based on the worse-performing asset, relative to the strike price.
+   - The prices of both options are calculated by averaging the simulated payoffs and applying a discounting factor for the time value of money.
 
-### **3. Option Pricing**
-- **Best-Of Option Payoff**:  
-  $$ \text{Payoff} = \max\left(\max(S_{\text{SG}}, S_{\text{BNP}}) - K, 0\right) $$
-
-- **Worst-Of Option Payoff**:  
-  $$ \text{Payoff} = \max\left(K - \min(S_{\text{SG}}, S_{\text{BNP}}), 0\right) $$
-  
-- **Option Price Formula**:  
-   Option prices are calculated by discounting the average payoffs:  
-   $$ \text{Price} = e^{-rT} \times \text{Payoff Average} $$
-
-  - \(K\): Strike price.
-  - \(r\): Risk-free rate.
-  - \(T\): Maturity (in years).
+   **Key Parameters**:
+   - **Strike Price**: The predetermined price at which the option becomes profitable.  
+   - **Risk-Free Rate**: The theoretical return of an investment with no risk, used for discounting.  
+   - **Maturity**: The time until the option expires, typically measured in years.
 
 ---
 
