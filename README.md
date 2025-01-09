@@ -32,9 +32,7 @@ The key steps in this project include:
 ### **2. Price Simulation**
 - **Monte Carlo Simulations**:
   - Simulates price paths for Société Générale and BNP assets using the GBM formula:
-    \[
-    S_t = S_{t-1} \times \exp\left((\mu - 0.5 \sigma^2) \Delta t + \sigma Z\sqrt{\Delta t}\right)
-    \]
+  $$ S_t = S_{t-1} \times \exp\left((\mu - 0.5 \sigma^2)\Delta t + \sigma Z\sqrt{\Delta t}\right) $$
     - \(S_t\): Price at time \(t\).
     - \(\mu\): Expected return.
     - \(\sigma\): Volatility.
@@ -43,17 +41,15 @@ The key steps in this project include:
 
 ### **3. Option Pricing**
 - **Best-Of Option Payoff**:  
-  \[
-  \text{Payoff} = \max\left(\max(S_{\text{SG}}, S_{\text{BNP}}) - K, 0\right)
-  \]
+  $$ \text{Payoff} = \max\left(\max(S_{\text{SG}}, S_{\text{BNP}}) - K, 0\right) $$
+
 - **Worst-Of Option Payoff**:  
-  \[
-  \text{Payoff} = \max\left(K - \min(S_{\text{SG}}, S_{\text{BNP}}), 0\right)
-  \]
-- Option prices are calculated by discounting the average payoffs:
-  \[
-  \text{Price} = e^{-rT} \times \text{Payoff Average}
-  \]
+  $$ \text{Payoff} = \max\left(K - \min(S_{\text{SG}}, S_{\text{BNP}}), 0\right) $$
+  
+- **Option Price Formula**:  
+   Option prices are calculated by discounting the average payoffs:  
+   $$ \text{Price} = e^{-rT} \times \text{Payoff Average} $$
+
   - \(K\): Strike price.
   - \(r\): Risk-free rate.
   - \(T\): Maturity (in years).
