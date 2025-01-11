@@ -16,10 +16,7 @@ The key steps in this project include:
    - Detailed report of the project, including methodologies, simulations, and results.
 
 2. **`Best-Of_Pricing_Project.xlsb`**  
-   - Excel workbook implementing the simulations and calculations.
-
-3. **`VBA_Code.txt`**  
-   - Code for retrieving spot prices, fetching historical data, and running simulations.
+   - Excel workbook and vba code implementing the simulations and calculations.
 
 ---
 ## Key Features
